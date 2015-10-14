@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -e
+
+package="cf-cli"
+version="6.12.4"
+file="${package}-${version}.tar.gz"
+
+tar zxvf ${package}/${file}
+
+mkdir ${BOSH_INSTALL_TARGET}/bin
+cp cf ${BOSH_INSTALL_TARGET}/bin
