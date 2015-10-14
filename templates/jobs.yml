@@ -1,0 +1,20 @@
+---
+update:
+  canaries: 1
+  max_in_flight: 50
+  canary_watch_time: 1000-30000
+  update_watch_time: 1000-30000
+  serial: false
+
+jobs:
+  - name: rabbitmq-smoke-tests
+    templates:
+    - name: rabbitmq-smoke-tests
+      release: rabbitmq-smoke-tests
+    instances: 0
+    resource_pool: small_z1
+    persistent_disk: 0
+    update:
+      canaries: 10
+    properties:
+      rabbitmq-smoke-tests:

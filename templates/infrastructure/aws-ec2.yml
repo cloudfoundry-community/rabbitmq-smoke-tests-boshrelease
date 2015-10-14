@@ -1,0 +1,34 @@
+---
+meta:
+  persistent_disk: 4096
+
+  stemcell:
+    name: bosh-aws-xen-ubuntu
+    version: latest
+
+jobs:
+  - name: rabbitmq-smoke-tests
+    instances: 2
+    networks:
+      - name: rabbitmq-smoke-tests
+    persistent_disk: (( grab meta.persistent_disk ))
+    properties:
+      rabbitmq-smoke-tests:
+
+compilation:
+  cloud_properties:
+    instance_type: m1.small
+
+resource_pools:
+  - name: small_z1
+    cloud_properties:
+      instance_type: m1.small
+
+networks:
+  - name: floating
+    type: vip
+    cloud_properties: {}
+  - name: rabbitmq-smoke-tests
+    type: dynamic
+    cloud_properties:
+      security_groups: (( grab meta.security_groups ))

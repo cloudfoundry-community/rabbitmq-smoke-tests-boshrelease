@@ -1,0 +1,31 @@
+---
+name: (( param "Please provide a name for your deployment" ))
+
+director_uuid: (( param "Please provide the BOSH Director UUID to deploy to" ))
+
+releases: (( param "Please provide the list of releases used in this deployment" ))
+
+networks: (( param "Please define the networks for this deployment" ))
+
+jobs: (( param "Please define the jobs for this deployment" ))
+
+properties: {}
+
+compilation:
+  workers: 6
+  network: rabbitmq-smoke-tests
+  reuse_compilation_vms: true
+  cloud_properties: (( param "The infrastructure templates forgot to define cloud properties for compilation VMs..." ))
+
+update:
+  canaries: 1
+  max_in_flight: 1
+  canary_watch_time: 30000-60000
+  update_watch_time: 5000-60000
+  serial: false
+
+resource_pools:
+  - name: small_z1
+    network: rabbitmq-smoke-tests
+    stemcell: (( grab meta.stemcell ))
+    cloud_properties: (( param "The infrastructure templates forgot to define the cloud properties for the small_z1 resource pool..." ))
