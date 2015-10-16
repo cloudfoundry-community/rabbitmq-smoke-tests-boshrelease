@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -e
+
+package="cf-rabbitmq-smoke-tests"
+
+mkdir -p ${BOSH_INSTALL_TARGET}/src
+cp -a ${package}/* ${BOSH_INSTALL_TARGET}/src

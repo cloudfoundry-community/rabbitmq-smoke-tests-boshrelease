@@ -1,0 +1,6 @@
+---
+# this is a SOURCE package
+name: cf-rabbitmq-smoke-tests
+dependencies: []
+files:
+  - cf-rabbitmq-smoke-tests/**/*
