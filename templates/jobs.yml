@@ -14,7 +14,6 @@ jobs:
       release: rabbitmq-smoke-tests
     instances: 0
     resource_pool: small_z1
-    persistent_disk: 0
     update:
       canaries: 10
     properties:

@@ -1,7 +1,5 @@
 ---
 meta:
-  persistent_disk: 4096
-
   stemcell:
     name: bosh-aws-xen-ubuntu
     version: latest
@@ -11,7 +9,6 @@ jobs:
     instances: 2
     networks:
       - name: smoke-tests
-    persistent_disk: (( grab meta.persistent_disk ))
     properties:
       rabbitmq-smoke-tests:
 
