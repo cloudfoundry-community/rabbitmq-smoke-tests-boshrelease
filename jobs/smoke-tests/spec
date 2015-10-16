@@ -13,7 +13,7 @@ templates:
 
 properties:
   smoke_tests.debug:
-    description: "Enable debug output, can be "true" or "false" (default)."
+    description: 'Enable debug output, can be "true" or "false" (default).'
     default: "false"
 
   cf.api_url:
