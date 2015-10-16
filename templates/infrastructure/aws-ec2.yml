@@ -7,10 +7,10 @@ meta:
     version: latest
 
 jobs:
-  - name: rabbitmq-smoke-tests
+  - name: smoke-tests
     instances: 2
     networks:
-      - name: rabbitmq-smoke-tests
+      - name: smoke-tests
     persistent_disk: (( grab meta.persistent_disk ))
     properties:
       rabbitmq-smoke-tests:
@@ -28,7 +28,7 @@ networks:
   - name: floating
     type: vip
     cloud_properties: {}
-  - name: rabbitmq-smoke-tests
+  - name: smoke-tests
     type: dynamic
     cloud_properties:
       security_groups: (( grab meta.security_groups ))

@@ -7,9 +7,10 @@ update:
   serial: false
 
 jobs:
-  - name: rabbitmq-smoke-tests
+  - name: smoke-tests
+    lifecycle: errand
     templates:
-    - name: rabbitmq-smoke-tests
+    - name: smoke-tests
       release: rabbitmq-smoke-tests
     instances: 0
     resource_pool: small_z1
