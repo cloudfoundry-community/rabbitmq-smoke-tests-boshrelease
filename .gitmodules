@@ -1,3 +1,0 @@
-[submodule "src/cf-rabbitmq-smoke-tests/assets/cf-rabbitmq-example-app"]
-	path = src/cf-rabbitmq-smoke-tests/assets/cf-rabbitmq-example-app
-	url = git@github.com:starkandwayne/cf-rabbitmq-example-app
