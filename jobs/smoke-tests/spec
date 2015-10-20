@@ -7,7 +7,7 @@ packages:
 
 templates:
   config/smoke-tests.json: config/smoke-tests.json
-  bin/smoke-tests: bin/smoke-tests
+  bin/run: bin/run
   shell/env: shell/env
   shell/functions: shell/functions
 
