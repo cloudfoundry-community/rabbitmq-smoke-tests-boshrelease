@@ -5,8 +5,8 @@
   "admin_password": "<%= p('cf.admin_password') %>",
   "service_name":   "<%= p('rabbitmq.service_name') %>",
   "plan_names": [
-    "" # FIXME
+    "standard"
   ],
-  "skip_ssl_validation": "true",
-  "create_permissive_security_group": "true"
+  "skip_ssl_validation": true,
+  "create_permissive_security_group": true
 }
