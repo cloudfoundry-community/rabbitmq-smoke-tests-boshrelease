@@ -1,11 +1,8 @@
 #!/usr/bin/env bash
 
-source "$(dirname $(dirname ${0}))/shell/env"
-trap graceful_stop SIGTERM
-
 cd /var/vcap/packages/cf-rabbitmq-smoke-tests
 export GOPATH="${PWD}/Godeps/_workspace"
 export GOROOT="/var/vcap/packages/go"
 export PATH="/var/vcap/packages/cf-cli/bin:${GOPATH}/bin:${GOROOT}/bin:${PATH}"
 
-CONFIG_PATH="${jobPath}/config/smoke-tests.json" ./bin/test
+CONFIG_PATH="/var/vcap/jobs/smoke-tests/config/smoke-tests.json" ./bin/test

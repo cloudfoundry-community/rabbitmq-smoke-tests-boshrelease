@@ -8,8 +8,6 @@ packages:
 templates:
   config/smoke-tests.json: config/smoke-tests.json
   bin/run: bin/run
-  shell/env: shell/env
-  shell/functions: shell/functions
 
 properties:
   smoke_tests.debug:
