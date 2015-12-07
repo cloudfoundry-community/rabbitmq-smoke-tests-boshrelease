@@ -13,7 +13,7 @@ properties: {}
 
 compilation:
   workers: 6
-  network: rabbitmq-smoke-tests
+  network: smoke-tests
   reuse_compilation_vms: true
   cloud_properties: (( param "The infrastructure templates forgot to define cloud properties for compilation VMs..." ))
 
@@ -26,6 +26,6 @@ update:
 
 resource_pools:
   - name: small_z1
-    network: rabbitmq-smoke-tests
+    network: smoke-tests
     stemcell: (( grab meta.stemcell ))
     cloud_properties: (( param "The infrastructure templates forgot to define the cloud properties for the small_z1 resource pool..." ))

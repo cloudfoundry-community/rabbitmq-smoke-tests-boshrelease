@@ -26,3 +26,8 @@ properties:
   rabbitmq.service_name:
     description: "Name of the RabbitMQ service in the Cloud Foundry catalog / marketplace"
     default: "rabbitmq"
+  rabbitmq.plan_names:
+    description: "Name of the RabbitMQ plans to test for the service named by <rabbitmq.service_name>"
+  rabbitmq.skip_ssl:
+    description: "true if the tests should skip ssl validation when creating a RabbitMQ agent. false otherwise"
+    default: false

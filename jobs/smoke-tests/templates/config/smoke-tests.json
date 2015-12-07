@@ -4,9 +4,8 @@
   "admin_user":     "<%= p('cf.admin_username') %>",
   "admin_password": "<%= p('cf.admin_password') %>",
   "service_name":   "<%= p('rabbitmq.service_name') %>",
-  "plan_names": [
-    "standard"
-  ],
+  "plan_names":		<%= p('rabbitmq.plan_names') %>,
+  "rabbitmq_skip_ssl": <%= p('rabbitmq.skip_ssl') %>,
   "skip_ssl_validation": true,
   "create_permissive_security_group": true
 }
