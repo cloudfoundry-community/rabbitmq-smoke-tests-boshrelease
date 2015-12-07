@@ -17,4 +17,10 @@ jobs:
     update:
       canaries: 10
     properties:
-      rabbitmq-smoke-tests:
+      cf:
+        api_url: (( merge ))
+        apps_domain: (( merge ))
+        admin_username: admin
+        admin_password: admin
+      rabbitmq:
+        service_name: p-rabbitmq
