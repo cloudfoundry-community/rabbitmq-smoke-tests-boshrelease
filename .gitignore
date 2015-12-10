@@ -6,7 +6,6 @@
 .blobs
 .blobs/
 .dev_builds/
-.final_builds/
 .final_builds/jobs/**/*.tgz
 .final_builds/packages/**/*.tgz
 .idea
