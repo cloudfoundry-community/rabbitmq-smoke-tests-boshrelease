@@ -216,7 +216,7 @@ fi
 bosh_target_check
 bosh_cli_check
 
-declare -a args
+declare -a args=(args)
 if (( ${#@} ))
 then args=($(echo "${@}"))
 fi
