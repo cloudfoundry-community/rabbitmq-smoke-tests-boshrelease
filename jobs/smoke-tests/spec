@@ -31,3 +31,6 @@ properties:
   rabbitmq.skip_ssl:
     description: "true if the tests should skip ssl validation when creating a RabbitMQ agent. false otherwise"
     default: false
+  rabbitmq.password:
+    description: "the password used for testing the rabbitmq instances"
+    default: "meow"
