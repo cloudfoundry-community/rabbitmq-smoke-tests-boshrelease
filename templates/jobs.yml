@@ -12,7 +12,7 @@ jobs:
     templates:
     - name: smoke-tests
       release: rabbitmq-smoke-tests
-    instances: 0
+    instances: 1
     resource_pool: small_z1
     update:
       canaries: 10
@@ -26,3 +26,4 @@ jobs:
         service_name: p-rabbitmq
         plan_names: '[ "standard" ]'
         skip_ssl: (( merge ))
+        password: anything_but_meow

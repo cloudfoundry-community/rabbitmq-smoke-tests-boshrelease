@@ -14,7 +14,7 @@ update:
 
 jobs:
   - name: smoke-tests
-    instances: 2
+    instances: 1
     networks:
       - name: smoke-tests
         static_ips: ~
