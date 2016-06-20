@@ -1,0 +1,30 @@
+---
+packages:
+- name: cf-cli
+  version: 14b33f4f5286d1f5778b471a981a025141d26132
+  fingerprint: 14b33f4f5286d1f5778b471a981a025141d26132
+  sha1: 1e3e416de286db382b26eb8fcbbec8894848e892
+  dependencies: []
+- name: cf-rabbitmq-smoke-tests
+  version: 2e6ffd916087e10d664f921336260109449ad016
+  fingerprint: 2e6ffd916087e10d664f921336260109449ad016
+  sha1: b9f4d24981b49ebe2668f56e3d61149070ea24e5
+  dependencies: []
+- name: go
+  version: 28f950c67c985fcaf7f043b5c1f653ce6b8ff379
+  fingerprint: 28f950c67c985fcaf7f043b5c1f653ce6b8ff379
+  sha1: 1903cc4bcc3a6e9ea2fdfb9e9cba00a2d09c94d7
+  dependencies: []
+jobs:
+- name: smoke-tests
+  version: e11bbecd4e8f6644a949f42450958826d124583b
+  fingerprint: e11bbecd4e8f6644a949f42450958826d124583b
+  sha1: e7ffec1ec7d5f3184cd456ea9a9ecaaa80001104
+license:
+  version: 6266e6d72460e0aaccda244014590b4b647434ef
+  fingerprint: 6266e6d72460e0aaccda244014590b4b647434ef
+  sha1: 21e0155d736dc8571e6fad2b3b2a7c8c8a650b48
+commit_hash: c189e967
+uncommitted_changes: true
+name: rabbitmq-smoke-tests
+version: '3'
