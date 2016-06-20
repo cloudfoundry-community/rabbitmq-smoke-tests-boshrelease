@@ -8,5 +8,7 @@
   "rabbitmq_skip_ssl": <%= p('rabbitmq.skip_ssl') %>,
   "test_password": "<%= p('rabbitmq.password') %>",
   "skip_ssl_validation": true,
-  "create_permissive_security_group": true
+  "create_permissive_security_group": true,
+  "test_stomp": <%= p('rabbitmq.test_stomp') %>,
+  "test_mqtt": <%= p('rabbitmq.test_mqtt') %>
 }
