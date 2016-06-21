@@ -34,3 +34,9 @@ properties:
   rabbitmq.password:
     description: "the password used for testing the rabbitmq instances"
     default: "meow"
+  rabbitmq.test_stomp:
+    default: "false"
+    description: "Run smoke tests over the STOMP protocol"
+  rabbitmq.test_mqtt:
+    default: "false"
+    description: "Run smoke test over the MQTT protocol"

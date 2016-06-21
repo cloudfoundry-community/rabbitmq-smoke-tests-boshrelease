@@ -1,0 +1,42 @@
+---
+packages:
+- name: cf-cli
+  version: !binary |-
+    MTRiMzNmNGY1Mjg2ZDFmNTc3OGI0NzFhOTgxYTAyNTE0MWQyNjEzMg==
+  fingerprint: !binary |-
+    MTRiMzNmNGY1Mjg2ZDFmNTc3OGI0NzFhOTgxYTAyNTE0MWQyNjEzMg==
+  sha1: 1e3e416de286db382b26eb8fcbbec8894848e892
+  dependencies: []
+- name: cf-rabbitmq-smoke-tests
+  version: !binary |-
+    MGFiODBhOGZmMGFkODBhOTdiMWFiMWM4NGE5MzJhNTcwNzQ0NmU5YQ==
+  fingerprint: !binary |-
+    MGFiODBhOGZmMGFkODBhOTdiMWFiMWM4NGE5MzJhNTcwNzQ0NmU5YQ==
+  sha1: !binary |-
+    MWM2ZGJhNmYyMGE1ZDY3ZDM1ZjZkYTY1NDliZDA4NDYyODM5MTJhNA==
+  dependencies: []
+- name: go
+  version: !binary |-
+    MjhmOTUwYzY3Yzk4NWZjYWY3ZjA0M2I1YzFmNjUzY2U2YjhmZjM3OQ==
+  fingerprint: !binary |-
+    MjhmOTUwYzY3Yzk4NWZjYWY3ZjA0M2I1YzFmNjUzY2U2YjhmZjM3OQ==
+  sha1: 1903cc4bcc3a6e9ea2fdfb9e9cba00a2d09c94d7
+  dependencies: []
+jobs:
+- name: smoke-tests
+  version: !binary |-
+    YWU5YzRjOGM0MWRjZTJkYWMzMjAwZThiMGFhMWFhOTU0ZWE2YzcwMA==
+  fingerprint: !binary |-
+    YWU5YzRjOGM0MWRjZTJkYWMzMjAwZThiMGFhMWFhOTU0ZWE2YzcwMA==
+  sha1: !binary |-
+    NDZlMzY3OTdkMGMwMzdhZGI3OTU1YzIwODMyYjZlZWU2Mzk2MmEzYg==
+license:
+  version: !binary |-
+    NjI2NmU2ZDcyNDYwZTBhYWNjZGEyNDQwMTQ1OTBiNGI2NDc0MzRlZg==
+  fingerprint: !binary |-
+    NjI2NmU2ZDcyNDYwZTBhYWNjZGEyNDQwMTQ1OTBiNGI2NDc0MzRlZg==
+  sha1: 21e0155d736dc8571e6fad2b3b2a7c8c8a650b48
+commit_hash: 07fe3bb4
+uncommitted_changes: true
+name: rabbitmq-smoke-tests
+version: '4'
